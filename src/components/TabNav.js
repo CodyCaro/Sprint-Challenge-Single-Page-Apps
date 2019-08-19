@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
-import WelcomePage from "./WelcomePage";
-import CharacterCard from "./CharacterCard";
 
 // TODO: Add missing tabs below
 export default function TabNav() {
