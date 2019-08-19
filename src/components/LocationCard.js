@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Icon, Image } from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 
 export default function LocationCard({ name, type, dimension, residents }) {
   return (
@@ -15,7 +15,7 @@ export default function LocationCard({ name, type, dimension, residents }) {
       </Card.Content>
       <Card.Content extra>
         <a>
-          {/* <Icon name="user" /> */}
+          <Icon name="users" />
           {residents} residents
         </a>
       </Card.Content>

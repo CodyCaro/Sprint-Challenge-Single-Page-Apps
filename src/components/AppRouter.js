@@ -5,13 +5,29 @@ import CharacterList from "./CharacterList";
 import LocationList from "./LocationsList";
 import EpisodeList from "./EpisodeList";
 
-function AppRouter() {
+function AppRouter(props) {
+  console.log(props.activeItem + " The Activeness");
   return (
     <div>
-      <Route exact path="/" component={WelcomePage} />
-      <Route exact path="/characters" component={CharacterList} />
-      <Route exact path="/locations" component={LocationList} />
-      <Route path="/episodes" component={EpisodeList} />
+      <Route
+        path="/"
+        component={props.activeItem === "Home Page" ? WelcomePage : null}
+      />
+      <Route
+        exact
+        path="/characters"
+        component={props.activeItem === "Characters" ? CharacterList : null}
+      />
+      <Route
+        exact
+        path="/locations"
+        component={props.activeItem === "Locations" ? LocationList : null}
+      />
+      <Route
+        exact
+        path="/episodes"
+        component={props.activeItem === "Episodes" ? EpisodeList : null}
+      />
     </div>
   );
 }
