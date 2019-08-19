@@ -6,12 +6,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 export default function App() {
   return (
-    <Router>
-      <main>
+    <main>
+      <Router>
         <Header />
         <TabNav />
         <AppRouter />
-      </main>
-    </Router>
+      </Router>
+    </main>
   );
 }
