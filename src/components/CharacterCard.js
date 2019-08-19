@@ -14,7 +14,7 @@ export default function CharacterCard(props) {
         </Card.Meta>
         <Card.Description>
           <p>Location: {props.characterData.location.name}</p>
-          <p> Origin: {props.characterData.origin.name}</p>
+          <p>Origin: {props.characterData.origin.name}</p>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>

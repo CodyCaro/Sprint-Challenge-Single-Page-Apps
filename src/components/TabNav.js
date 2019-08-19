@@ -18,6 +18,7 @@ export default function TabNav() {
           active={activeItem === "Home Page"}
           onClick={() => handleItemClick("Home Page")}
         >
+          <Icon name="home" />
           Home Page
         </Menu.Item>
       </NavLink>
@@ -27,6 +28,7 @@ export default function TabNav() {
           active={activeItem === "Characters"}
           onClick={() => handleItemClick("Characters")}
         >
+          <Icon name="users" />
           Characters
         </Menu.Item>
       </NavLink>
@@ -36,6 +38,7 @@ export default function TabNav() {
           active={activeItem === "Locations"}
           onClick={() => handleItemClick("Locations")}
         >
+          <Icon name="map outline" />
           Locations
         </Menu.Item>
       </NavLink>
@@ -45,6 +48,7 @@ export default function TabNav() {
           active={activeItem === "Episodes"}
           onClick={() => handleItemClick("Episodes")}
         >
+          <Icon name="film" />
           Episodes
         </Menu.Item>
       </NavLink>
