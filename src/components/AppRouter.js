@@ -6,10 +6,10 @@ import CharacterList from "./CharacterList";
 function AppRouter() {
   return (
     <div>
-      <Route path="" component={WelcomePage} />
-      <Route path="./characters" exact component={CharacterList} />
-      <Route path="" component={WelcomePage} />
-      <Route path="" component={WelcomePage} />
+      <Route exact path="" component={WelcomePage} />
+      <Route exact path="/characters" component={CharacterList} />
+      {/* <Route path="" component={WelcomePage} />
+      <Route path="" component={WelcomePage} /> */}
     </div>
   );
 }

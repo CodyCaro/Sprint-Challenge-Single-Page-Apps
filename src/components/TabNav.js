@@ -12,7 +12,7 @@ export default function TabNav() {
 
   return (
     <Menu tabular>
-      <NavLink to="" exact>
+      <NavLink to="">
         <Menu.Item
           name="Home Page"
           active={activeItem === "Home Page"}
@@ -21,7 +21,7 @@ export default function TabNav() {
           Home Page
         </Menu.Item>
       </NavLink>
-      <NavLink to="./characters" exact>
+      <NavLink to="./characters">
         <Menu.Item
           name="Characters"
           active={activeItem === "Characters"}
@@ -30,7 +30,7 @@ export default function TabNav() {
           Characters
         </Menu.Item>
       </NavLink>
-      <NavLink to="./locations" exact>
+      <NavLink to="./locations">
         <Menu.Item
           name="Locations"
           active={activeItem === "Locations"}
@@ -39,7 +39,7 @@ export default function TabNav() {
           Locations
         </Menu.Item>
       </NavLink>
-      <NavLink to="./episodes" exact>
+      <NavLink to="./episodes">
         <Menu.Item
           name="Episodes"
           active={activeItem === "Episodes"}
