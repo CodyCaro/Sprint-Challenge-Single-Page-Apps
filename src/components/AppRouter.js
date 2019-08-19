@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import WelcomePage from "./WelcomePage";
 import CharacterList from "./CharacterList";
 import LocationList from "./LocationsList";
+import EpisodeList from "./EpisodeList";
 
 function AppRouter() {
   return (
@@ -10,7 +11,7 @@ function AppRouter() {
       <Route exact path="/" component={WelcomePage} />
       <Route exact path="/characters" component={CharacterList} />
       <Route exact path="/locations" component={LocationList} />
-      {/* <Route path="" component={WelcomePage} /> */}
+      <Route path="/episodes" component={EpisodeList} />
     </div>
   );
 }
