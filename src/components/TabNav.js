@@ -12,7 +12,7 @@ export default function TabNav() {
 
   return (
     <Menu tabular>
-      <NavLink to="">
+      <NavLink to="./">
         <Menu.Item
           name="Home Page"
           active={activeItem === "Home Page"}
